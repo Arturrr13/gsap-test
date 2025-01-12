@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { onMounted } from 'vue'
 import TitleAnim from '../UI/TitleAnim.vue'
 
-onMounted(() => {
+const lol = () => {
 	let video = document.querySelector('.element__video')
 
 	video.addEventListener('loadedmetadata', () => {
@@ -44,8 +44,13 @@ onMounted(() => {
 			duration: 4  // Збільшуємо тривалість для анімації відео  
 		})
 	})
+}
 
+onMounted(() => {
+	lol()
 })
+
+window.addEventListener('resize', lol)
 </script>
 
 <template>
