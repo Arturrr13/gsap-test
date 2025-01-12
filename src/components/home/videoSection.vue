@@ -10,10 +10,10 @@ onMounted(() => {
 		const tlVideo = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.video-section__video-wr',
-				start: "center center",  // початок анімації
+				start: "top top",  // початок анімації
 				end: "+=3500 center",       // кінець анімації
 				scrub: 0.5,          // плавна анімація
-				markers: false,         // для тестування, відобразити маркери
+				markers: true,         // для тестування, відобразити маркери
 				pin: true,
 				pinSpacing: true
 			}
@@ -22,7 +22,7 @@ onMounted(() => {
 		tlVideo
 		.to('.video-section__video-wr--video', {
 			width: '100vw',
-			height: '100vh',
+			//height: '100vh',
 			borderRadius: 0,
 			duration: 1  // Тривалість четвертої анімації
 		})
@@ -80,13 +80,13 @@ onMounted(() => {
 	overflow: hidden;
 
 	&__video-wr{
-		height: 100dvh;
+		//height: 100dvh;
 		width: 100vw;
 
 		&--video{
 			width: 50vw;
-			height: 25vw;
-			border-radius: em(75);
+			aspect-ratio: 16 / 9;
+			border-radius: em(35);
 			overflow: hidden;
 			margin: 0 auto;
 			position: relative;
