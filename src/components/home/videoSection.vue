@@ -9,8 +9,8 @@ const lol = () => {
 // 	limitCallbacks: true,
 // 	ignoreMobileResize: true,
 //   });
-  ScrollTrigger.normalizeScroll()
-  //ScrollTrigger.refresh()
+//   ScrollTrigger.normalizeScroll()
+  ScrollTrigger.refresh()
 	let video = document.querySelector('.element__video')
 
 	video.addEventListener('loadedmetadata', () => {
