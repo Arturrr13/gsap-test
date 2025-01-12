@@ -55,6 +55,8 @@ const lol = () => {
 
 onMounted(() => {
 	lol()
+	video.play();
+	video.pause();
 })
 
 window.addEventListener('resize', lol)
