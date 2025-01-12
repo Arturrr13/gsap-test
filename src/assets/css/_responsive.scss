@@ -1,0 +1,9 @@
+@use './function' as *;
+
+html, body{
+    @media screen and (width > 1024px) and (height < 60vw) {
+        html, body{
+           
+        }
+    }
+}
