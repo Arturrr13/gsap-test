@@ -8,8 +8,11 @@ onMounted(() => {
 	ScrollTrigger.refresh()
 
 	let video = document.querySelector('.element__video')
-	video.play();
-	video.pause();
+	if (video != undefined) {
+			//video.play();
+			video.currentTime = 0
+			video.pause();
+	}
 
 	video.addEventListener('loadedmetadata', () => {
 		const tlVideo = gsap.timeline({
@@ -68,7 +71,7 @@ onMounted(() => {
 					<img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/c0e9c490-b7e7-47a6-9c43-3e10e8ddc9cb-4445-dubai-img-worlds-of-adventure-tickets-08-1024x639.jpg" alt="gigachad" loading="lazy">
 				</div>
 				<div class="element">
-					<video class="element__video" playsinline="true" autoplay webkit-playsinline="true" loop preload="auto" disablepictureinpicture muted="muted">
+					<video class="element__video" playsinline="true" webkit-playsinline="true" loop preload="auto" disablepictureinpicture muted="muted">
 					  	<source src="../../assets/video/1.mp4" type="video/mp4" />
 					</video>
 				</div>
