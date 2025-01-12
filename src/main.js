@@ -7,6 +7,6 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 ScrollTrigger.normalizeScroll(true)
-ScrollTrigger.config({autoRefreshEvents: "DOMContentLoaded,load,visibilitychange"});
+// ScrollTrigger.config({autoRefreshEvents: "DOMContentLoaded,load,visibilitychange"});
 
 createApp(App).use(router).mount('#app')
