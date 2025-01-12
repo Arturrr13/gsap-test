@@ -17,6 +17,9 @@ import TitleAnim from '../components/UI/TitleAnim.vue'
 		</div>
 		<video-section />
 		<box-section />
+		<video class="element__video" playsinline="true" webkit-playsinline="true" loop preload="auto" autoplay disablepictureinpicture muted="muted">
+		  	<source src="../assets/video/1.mp4" type="video/mp4" />
+		</video>
 		<text-section />
 		<text-section />
 		<text-section />
