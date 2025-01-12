@@ -1,9 +1,16 @@
 <script setup>
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { onMounted } from 'vue'
 import TitleAnim from '../UI/TitleAnim.vue'
 
 const lol = () => {
+	ScrollTrigger.config({
+	limitCallbacks: true,
+	ignoreMobileResize: true,
+  });
+  ScrollTrigger.normalizeScroll()
+  ScrollTrigger.refresh()
 	let video = document.querySelector('.element__video')
 
 	video.addEventListener('loadedmetadata', () => {
