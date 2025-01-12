@@ -57,7 +57,7 @@ onMounted(() => {
 	lol()
 })
 
-//window.addEventListener('resize', lol)
+window.addEventListener('resize', lol)
 </script>
 
 <template>
