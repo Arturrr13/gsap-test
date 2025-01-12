@@ -12,6 +12,8 @@ const lol = () => {
 //   ScrollTrigger.normalizeScroll()
   ScrollTrigger.refresh()
 	let video = document.querySelector('.element__video')
+	video.play();
+	video.pause();
 
 	video.addEventListener('loadedmetadata', () => {
 		const tlVideo = gsap.timeline({
@@ -55,8 +57,6 @@ const lol = () => {
 
 onMounted(() => {
 	lol()
-	video.play();
-	video.pause();
 })
 
 window.addEventListener('resize', lol)
