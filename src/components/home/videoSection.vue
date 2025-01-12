@@ -83,12 +83,15 @@ window.addEventListener('resize', lol)
 	//min-height: 100dvh;
 	@include flex(column, center, center, false);
 	overflow: hidden;
+	will-change: transform;
 
 	&__video-wr{
 		//height: 100dvh;
 		width: 100vw;
+		will-change: transform;
 
 		&--video{
+			will-change: transform;
 			width: 50vw;
 			aspect-ratio: 16 / 9;
 			border-radius: em(35);
