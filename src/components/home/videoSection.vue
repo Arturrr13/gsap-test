@@ -17,7 +17,7 @@ const lol = () => {
 		const tlVideo = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.video-section__video-wr',
-				start: "top top",  // початок анімації
+				start: "center center",  // початок анімації
 				end: "+=3500 center",       // кінець анімації
 				scrub: 0.5,          // плавна анімація
 				markers: true,         // для тестування, відобразити маркери
@@ -29,7 +29,7 @@ const lol = () => {
 		tlVideo
 		.to('.video-section__video-wr--video', {
 			width: '100vw',
-			//height: '100vh',
+			height: '100vh',
 			borderRadius: 0,
 			duration: 1  // Тривалість четвертої анімації
 		})
@@ -45,11 +45,11 @@ const lol = () => {
 			clipPath: 'inset(0% 0% 0% 0%)',
 			duration: 1
 		})
-		// .to(video, {
-		// 	currentTime: video.duration,
-		// 	ease: "none",
-		// 	duration: 4  // Збільшуємо тривалість для анімації відео  
-		// })
+		.to(video, {
+			currentTime: video.duration,
+			ease: "none",
+			duration: 4  // Збільшуємо тривалість для анімації відео  
+		})
 	})
 }
 
@@ -90,16 +90,14 @@ window.addEventListener('resize', lol)
 	//min-height: 100dvh;
 	@include flex(column, center, center, false);
 	overflow: hidden;
-	// will-change: transform;
 
 	&__video-wr{
-		//height: 100dvh;
+		height: 100vh;
 		width: 100vw;
-		// will-change: transform;
 
 		&--video{
-			// will-change: transform;
 			width: 50vw;
+			// height: 25vw;
 			aspect-ratio: 16 / 9;
 			border-radius: em(35);
 			overflow: hidden;
