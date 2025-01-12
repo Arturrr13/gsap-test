@@ -9,7 +9,9 @@ gsap.registerPlugin(ScrollTrigger)
 // ScrollTrigger.config({
 // 	limitCallbacks: true,
 // 	ignoreMobileResize: true,
-//   });
+// });
 // ScrollTrigger.config({autoRefreshEvents: "DOMContentLoaded,load,visibilitychange"});
+// ScrollTrigger.normalizeScroll()
+// ScrollTrigger.refresh()
 
 createApp(App).use(router).mount('#app')
