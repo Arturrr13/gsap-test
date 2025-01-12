@@ -50,7 +50,7 @@ onMounted(() => {
 
 <template>
 	<div class="video-section">
-		<title-anim :text="'Some title text'" />
+		<!-- <title-anim :text="'Some title text'" /> -->
 
 		<div class="video-section__video-wr">
 			<div class="video-section__video-wr--video">
