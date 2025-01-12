@@ -14,7 +14,7 @@
 <style lang="scss" scoped>
 .hero{
 	padding: em(30);
-	height: 100dvh;
+	height: 100vh;
 	@include flex(column, center, center, em(35));
 }
 </style>

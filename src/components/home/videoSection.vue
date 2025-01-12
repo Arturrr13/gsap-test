@@ -10,7 +10,7 @@ const lol = () => {
 // 	ignoreMobileResize: true,
 //   });
   //ScrollTrigger.normalizeScroll()
-  ScrollTrigger.refresh()
+  //ScrollTrigger.refresh()
 	let video = document.querySelector('.element__video')
 
 	video.addEventListener('loadedmetadata', () => {
