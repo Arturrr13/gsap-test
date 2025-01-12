@@ -6,7 +6,10 @@ import App from './App.vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
-ScrollTrigger.normalizeScroll(true)
+ScrollTrigger.config({
+	limitCallbacks: true,
+	ignoreMobileResize: true,
+  });
 // ScrollTrigger.config({autoRefreshEvents: "DOMContentLoaded,load,visibilitychange"});
 
 createApp(App).use(router).mount('#app')
